@@ -26,7 +26,7 @@ browser = webbrowser.get('firefox')
 first = True
 for i in dork:
     if first:
-        browser.open_new(i)
+        browser.open_new('https://www.google.com/search?client=firefox-b-d&q=' + i)
         first = False
     else:
-        browser.open_new_tab(i)
+        browser.open_new_tab('https://www.google.com/search?client=firefox-b-d&q=' + i)
